@@ -6,13 +6,13 @@ This project is a multithreaded spellchecker program that allows you to start co
 
 # Features
 
--Text-Based Menu: Start new spell-checking tasks or exit the program.
+- Text-Based Menu: Start new spell-checking tasks or exit the program.
+ 
+- Multithreading: Each spell-checking task runs in its own thread.
 
--Multithreading: Each spell-checking task runs in its own thread.
+- Thread Synchronization: Proper synchronization to handle file writing and shared resources.
 
--Thread Synchronization: Proper synchronization to handle file writing and shared resources.
-
--Spellchecking: Checks text files against a provided dictionary and reports spelling mistakes.
+- Spellchecking: Checks text files against a provided dictionary and reports spelling mistakes.
 
 # Task - Spellchecking
 
@@ -26,16 +26,16 @@ Saves the results to a file.
 
 # Menu Options
 
-Start a New Spellchecking Task:
-
-Enter the dictionary file name.
-
-Enter the input text file name.
-
-Starts a new spellchecking task in a separate thread.
-
-Exit:
-Displays a summary of completed tasks and exits the program.
+    Start a New Spellchecking Task:
+    
+    Enter the dictionary file name.
+    
+    Enter the input text file name.
+    
+    Starts a new spellchecking task in a separate thread.
+    
+    Exit:
+    Displays a summary of completed tasks and exits the program.
 
 # Summary
 
@@ -49,7 +49,7 @@ The three most common misspelled words and their frequencies.
 
 # Command Line Argument
 
--l: If provided, the final summary is saved to a file instead of being displayed on the screen.
+    -l: If provided, the final summary is saved to a file instead of being displayed on the screen.
 
 # Compilation and Execution
 
@@ -67,15 +67,15 @@ The three most common misspelled words and their frequencies.
 
 Each spellchecker task outputs results to a file named username_A2.out in the format:
 
-someFile.txt 32 someword badword2 badword3
-
-The final summary includes:
-
-Number of files processed: XXX
-
-Number of spelling errors: YYY
-
-Three most common misspellings: word1 (A times), word2 (B times), word3 (C times)
+    someFile.txt 32 someword badword2 badword3
+    
+    The final summary includes:
+    
+    Number of files processed: XXX
+    
+    Number of spelling errors: YYY
+    
+    Three most common misspellings: word1 (A times), word2 (B times), word3 (C times)
 
 # Makefile Targets
 
